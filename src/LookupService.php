@@ -18,8 +18,9 @@ interface LookupService
 
 	/**
 	 * @throws PropertyLookupException
+	 * @return Property[]
 	 */
-	public function lookupByAddress(Address $address): Property;
+	public function lookupByAddress(Address $address): array;
 
 	/**
 	 * @throws PropertyLookupException

@@ -2,9 +2,7 @@
 
 namespace Stefna\PropertyLookup\Entities;
 
-use Stefna\PersonContract\Entities\Person;
-
 interface PropertyOwner
 {
-	public function getPropertyOwnership(): int;
+	public function getPropertyOwnership(): float;
 }

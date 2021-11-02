@@ -10,12 +10,14 @@ interface Property
 {
 	public function getPropertyIdentification(): PropertyIdentification;
 
-	public function getCurrentOwner(): ?Person;
-
 	public function getAddress(): Address;
 
+	public function getMarking(): string;
+
+	public function getType(): string;
+
 	/**
-	 * @return Person[]
+	 * @return Person&PropertyOwner[]
 	 */
-	public function getOwners();
+	public function getOwners(): array;
 }

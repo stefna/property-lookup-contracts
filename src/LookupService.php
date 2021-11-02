@@ -24,6 +24,7 @@ interface LookupService
 	/**
 	 * @throws PropertyLookupException
 	 * @param PersonWithAddress&Person
+	 * @return Property[]
 	 */
-	public function lookupByPerson(PersonWithAddress $person): Property;
+	public function lookupByPerson(PersonWithAddress $person): array;
 }
